@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Registro de usuarios</title>
+</head>
+<body>
+    <div class="nav-bg">
+        <nav class="main-navigation container">
+                <a href="index.html">Home</a>
+                <a href="product.html">Productos</a>
+                <a href="/sales.html">Ventas</a>
+                <a href="/promotion.html">Publicidad</a>
+                <a href="/about-us.html">Contactos</a>
+        </nav>
+    </div>
+    <section>
+
+        <h1>Datos para Inscripción</h1>
+        <form method="get" action="/succes.html" class="frm">
+            <fieldset>
+                <legend>Debe llenar todos los campos</legend>        
+                <div>
+                    <div class="field">
+                        <label>Nombre: </label>
+                        <input class="input-text" type="text" placeholder="Tu Nombre">
+                    </div>
+                    <div class="field">
+                        <label>Apellido: </label>
+                        <input class="input-text" type="text" placeholder="Tu Apellido">
+                    </div>
+                    <div class="field">
+                        <label>Cedula: </label>
+                        <input class="input-text" type="tel" placeholder="Tu Cedula">
+                    </div>
+                    <div class="field">
+                        <label>Matricula: </label>
+                        <input class="input-text" type="tel" placeholder="Tu Matricula">
+                    </div>
+                    <div class="field">
+                        <p>
+                            <label for="materia">Materia: </label>
+                            <select name="materia" id="materia">
+                                <option value="0">Elija -->>></option>
+                                <option value="1">Lenguaje</option>
+                                <option value="2">Sociales</option>
+                                <option value="3">Naturales</option>
+                                <option value="4">Matematica</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label>Fecha de nacimiento: </label>
+                        <input class="input-text" type="date">
+                    </div>
+                    <div class="field">
+                        <label>Direccion:</label>
+                        <textarea class="input-text"></textarea>
+                    </div>
+                    <div class="field">
+                        <label>Codigo Postal: </label>
+                        <input class="input-text" type="tel" placeholder="Codigo Postal">
+                    </div>
+                    <div class="field">
+                        <label>Provincia: </label>
+                        <input class="input-text" type="text" placeholder="Tu Provincia">
+                    </div>
+                    <div>
+                        <p><strong>Sexo: </strong></p>
+            
+                        <input type="radio" name="sexo" id="F" value="F">
+                        <label for="F">Femenino</label>
+                        <input type="radio" name="sexo" id="M" value="M">
+                        <label for="M">Masculino</label>
+                    </div>
+                    <div>
+                        <p><strong>Idiomas: </strong></p>
+            
+                        <input type="checkbox" name="idiomas" id="ingles" value="ingles">
+                        <label for="ingles">Ingles</label>
+                        <input type="checkbox" name="idiomas" id="aleman" value="aleman">
+                        <label for="aleman">Aleman</label>
+                        <input type="checkbox" name="idiomas" id="frances" value="frances">
+                        <label for="frances">Frances</label>
+
+                    </div>
+                    
+                </div>
+                <div class="align-right flex">
+                    <input class="button w-sm-100" type="submit" value="Procesar inscripcion">
+                </div> <!----- .button ---->
+            </fieldset>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy; ALM</p>
+    </footer>
+</body>
+</html>
